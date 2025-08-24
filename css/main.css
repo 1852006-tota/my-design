@@ -1,0 +1,352 @@
+/* إعدادات أساسية */
+body {
+  margin: 0;
+  font-family: 'Cairo', Arial, sans-serif;
+  direction: rtl;
+  background-color: #f9f9f9;
+  color: #222;
+  border: 0;
+}
+
+/* توزيع الأعمدة */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* صناديق الأعمدة */
+.logo,
+.main-content,
+.sidebar {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+
+/* العمود الأيسر */
+.logo {
+  text-align: center;
+}
+.image{
+  width: 152px;
+  height: 115px;
+  margin-top: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo-img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+.feature h4 {
+  font-size: 16px;
+  margin: 10px 0 5px;
+  color: #222;
+}
+.feature-description {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* العمود الأوسط */
+.main-content h1 {
+  font-size: 28px; /* أكبر ليتناسب مع الحجم المطلوب */
+  margin-top: 0;
+  text-align: center;
+}
+.description {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+/* الخطوات */
+.steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  background: #f8f9fa;
+  border: 1px solid #f6fafe;
+  border-radius: 20px;
+  padding: 15px 25px;
+  margin-bottom: 25px;
+  
+}
+.step {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: #444;
+}
+.step .num {
+  width: 24px;
+  height: 24px;
+  background-color: #484a61;  
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+}
+
+/* مربعات اختيار نوع المحتوى */
+.item-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.item {
+  background-color: #ffffff;
+  border: 1px solid #ececec;
+  border-radius: 12px;
+  padding: 20px 10px;
+  text-align: center;
+  width: 120px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+.item:hover {
+  background-color: #e6e8ea;
+  transform: translateY(-2px);
+}
+.item img {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 8px;
+}
+.item p {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* مربع الفيديو */
+.item.video {
+  background-color: white;
+  border-color: #0081fd;
+  
+}
+.item.video p {
+  color: #0081fd;
+}
+
+/* خانة كتابة اسم المادة */
+.main-content input[type="text"] {
+  width: 95%;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border: 1px solid #ececec;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+/* إرسال الرابط */
+.send-link {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.send-link input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 14px;
+}
+.send-link button {
+  background-color: #0181bd;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 14px;
+}
+.send-link button:hover {
+  background-color: #0181bd;
+}
+
+/* الفاصل مع النص */
+.divider {
+  position: relative;
+  height: 1px;
+  background-color: #ddd;
+  margin: 25px 0;
+}
+.divider-text {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  background-color: #fff;
+  padding: 0 10px;
+  font-size: 13px;
+  color: #666;
+}
+
+/* منطقة رفع الملفات */
+.upload-area {
+  border: 2px dashed #dcdcdc;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  background-color: #fcfcfc;
+  transition: border-color 0.3s, background 0.3s;
+  
+}
+.upload-area:hover {
+  border-color: #0181bd;
+  background-color: #f0f7ff;
+}
+.upload-area img {
+  margin-bottom: 10px;
+}
+.upload-area p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+.upload-area a {
+  color: #0181bd;
+  text-decoration: underline;
+  cursor: pointer;
+  text-decoration: none;
+}
+.upload-link {
+  color: #0181bd;
+  text-decoration: none;
+}
+
+/* العمود الايمن */
+
+.sidebar {
+  justify-content: center;   
+  align-items: center;       
+  height: 95%;             
+}
+
+.card {
+  width: 350px;              
+  height: 690px;             
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card-header {
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  text-align: right;
+}
+
+.card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   
+  align-items: center;       
+  gap: 10px;                 
+}
+
+.card-img {
+  width: 199px;              
+  height: 173px;
+  object-fit: contain;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #666;
+}
+/* Responsive */
+
+
+@media (max-width: 992px) {
+  .container {
+    grid-template-columns: 1fr 1fr; 
+  }
+
+  .sidebar {
+    grid-column: 1 / -1; 
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    grid-template-columns: 1fr; 
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .logo,
+  .main-content,
+  .sidebar {
+    padding: 15px;
+  }
+
+  .main-content h1 {
+    font-size: 22px;
+  }
+
+  .steps {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 15px;
+  }
+
+  .item-list {
+    gap: 12px;
+  }
+
+  .item {
+    width: 100px;
+    padding: 15px 8px;
+  }
+
+  .send-link {
+    flex-direction: column;
+  }
+
+  .send-link input,
+  .send-link button {
+    width: 100%;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .card-img {
+    width: 150px;
+    height: 130px;
+  }
+}

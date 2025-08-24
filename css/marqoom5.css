@@ -1,0 +1,205 @@
+/* إعدادات أساسية */
+body {
+  margin: 0;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  font-family: "Tahoma", Arial, sans-serif;
+  background: #f9f9f9;
+  direction: rtl;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* العمود الأيمن */
+.right-side {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+/* سهم العودة */
+.back-arrow {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.back-arrow img {
+  width: 18px;
+}
+
+/* صورة */
+.image-box {
+  width: 100%;
+  text-align: center;
+  margin: 15px 0;
+}
+.image-box img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* العنوان */
+.title {
+  font-size: 20px;
+  margin: 15px 0;
+  color: #111;
+}
+
+/* النص */
+.description {
+  line-height: 1.8;
+  color: #444;
+  font-size: 15px;
+}
+
+/* الأيقونات */
+.icon-links {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  flex-direction: row-reverse;
+}
+.icon-links img {
+  width: 24px;
+  cursor: pointer;
+}
+
+/* العمود الأيسر */
+.left-side {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;  
+}
+
+.left-side h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #222;
+}
+.left-side hr {
+  margin: 10px 0 15px;
+}
+
+/* القائمة */
+.item-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  background: white;
+  cursor: pointer;
+  transition: background 0.3s;
+  justify-content: center;
+}
+.item:hover {
+  background: #f3f3f3;
+}
+.item img {
+  width: 20px;
+}
+.item p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+.item.more {
+  grid-column: span 2;
+  justify-content: center;
+}
+
+/* البوكس */
+.extra-box {
+  margin-top: 20px;         
+  border: 2px solid #ececec;
+  border-radius: 22px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px 24px;
+  max-width: 800px;
+  min-height: 80px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+  direction: rtl;
+  margin-top: auto;
+}
+
+/* الإدخال */
+.extra-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #111827;
+  background: transparent;
+}
+
+.extra-input::placeholder {
+  color: #9aa3af;
+}
+
+/* زر السهم */
+.extra-link {
+  flex-shrink: 0;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin-right: 10px;
+  transition: 0.2s ease;
+  align-self: flex-end;
+}
+
+.extra-link:hover {
+  transform: scale(1.05);
+}
+
+.extra-link img {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; 
+  }
+
+  .left-side, .right-side {
+    width: 100%;
+  }
+
+  .item-list {
+    grid-template-columns: 1fr; 
+  }
+
+  .icon-links {
+    justify-content: center;
+  }
+}

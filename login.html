@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تسجيل دخول</title>
+  <link rel="stylesheet" href="css/style.css">
+  <header class="top-bar">
+      <img src="images/markoum 1.svg" alt="شعار الموقع" class="logo">
+  <a href="index.html" class="back-btn">عودة←</a>
+</header>
+</head>
+<body>
+  <div class="container">
+    <div class="form-box">
+      <h2>تسجيل دخول</h2>
+      <form onsubmit="event.preventDefault(); window.location.href='css/home.html';">
+        <input type="email" placeholder="ادخل بريدك الإلكتروني" required>
+        <input type="password" placeholder="كلمة المرور" required>
+
+        <div class="remember-forgot">
+          <label><input type="checkbox"> تذكرني</label>
+          <a href="#">نسيت كلمة المرور؟</a>
+        </div>
+
+        <button type="submit" class="btn">دخول</button>
+
+        <p class="signup-link">ليس لديك حساب؟ <a href="home.html">سجل الآن</a></p>
+
+        <div class="divider"><span>أو</span></div>
+
+         <div class="social-login">
+        <button>
+          <img src="https://img.icons8.com/color/48/google-logo.png" alt="Google">
+          سجل بواسطة جوجل
+        </button>
+        <button>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook">
+          سجل بواسطة فيسبوك
+        </button>
+        <button>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple">
+          سجل بواسطة Apple
+        </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
+</html>

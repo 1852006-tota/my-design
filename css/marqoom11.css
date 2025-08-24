@@ -1,0 +1,349 @@
+/* إعدادات أساسية */
+body {
+  margin: 0;
+  font-family: 'Cairo', Arial, sans-serif;
+  direction: rtl;
+  background-color: #f5f6f8;
+  color: #222;
+}
+
+/* توزيع الأعمدة */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  align-items: start;
+}
+
+/* صناديق الأعمدة */
+.logo,
+.main-content,
+.left-side{
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+/* العمود الأيسر */
+.logo {
+  text-align: center;
+  height: 95%;
+}
+.image{
+  width: 152px;
+  height: 115px;
+  margin-top: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo-img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+.feature h4 {
+  font-size: 16px;
+  margin: 10px 0 5px;
+  color: #222;
+}
+.feature-description {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* العمود الأوسط */
+.main-content {
+  text-align: center;
+  height: 95%;
+}
+.main-content h1 {
+  font-size: 28px; 
+  margin-top: 0;
+  overflow: hidden;
+}
+.description {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+/* الخطوات */
+.steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  background: #f8f9fa;
+  border: 1px solid #f6fafe;
+  border-radius: 20px;
+  padding: 15px 25px;
+  margin-bottom: 25px;
+  
+}
+.step {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: #444;
+
+
+}
+.step .num {
+  width: 24px;
+  height: 24px;
+  background-color: #484a61;  
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+}
+.item-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.item {
+  background-color: #ffffff;
+  border: 1px solid #ececec;
+  border-radius: 12px;
+  padding: 20px 10px;
+  text-align: center;
+  width: 120px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+.item:hover {
+  background-color: #e6e8ea;
+  transform: translateY(-2px);
+}
+.item img {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 8px;
+}
+.item p {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* مربع الفيديو */
+.item.video {
+  background-color: white;
+  border-color: #0081fd;
+  
+}
+.item.video p {
+  color: #0081fd;
+}
+
+/* إرسال الرابط */
+.send-link {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.send-link input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 14px;
+}
+.send-link button {
+  background-color: #0181bd;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 14px;
+}
+.send-link button:hover {
+  background-color: #0181bd;
+}
+
+/* الفاصل مع النص */
+.divider {
+  position: relative;
+  height: 1px;
+  background-color: #ddd;
+  margin: 25px 0;
+}
+.divider-text {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  background-color: #fff;
+  padding: 0 10px;
+  font-size: 13px;
+  color: #666;
+}
+.upload-area {
+  border: 2px dashed #dcdcdc;
+  border-radius: 15px;
+  text-align: center;
+  padding: 30px;
+  background-color: #fcfcfc;
+  transition: border-color 0.3s, background 0.3s;
+}
+
+.upload-area img {
+  width: 95%;
+}
+
+.upload-info {
+  background: #fff;
+  border: 1px solid #e6eaf0;
+  border-radius: 16px;
+  margin-top: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  padding: 40px 40px;
+  max-width: 650px; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-family: "Cairo", sans-serif;
+  border:2px solid #e0f0ff;
+}
+
+/* العنوان */
+.upload-info p {
+  align-self: flex-start;
+  margin: 0;
+  font-size: 15px;
+  color: #333;
+  font-weight: 500;
+}
+
+/* زرار الرفع (الصورة) */
+.upload-info img {
+  align-self: flex-end;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.upload-info img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+
+/* العمود الأيمن*/
+.left-side {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  height: 95%;
+}
+
+.left-side h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.left-side hr {
+  margin: 10px 0 20px;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+/* شبكة العناصر */
+.sheck-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 15px;
+}
+
+/* كل عنصر */
+.check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  background: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.check:hover {
+  background: #f1f1f1;
+}
+
+.check img {
+  width: 20px;
+  height: 20px;
+}
+
+.check p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.check.more {
+  grid-column: span 2;
+  justify-content: center;
+  background: #fff;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; 
+  }
+
+  .steps {
+    flex-direction: column; 
+    align-items: flex-start;
+  }
+
+  .item-list {
+    justify-content: center;
+  }
+
+  .upload-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .send-link {
+    flex-direction: column;
+  }
+
+  .send-link input,
+  .send-link button {
+    width: 100%;
+  }
+
+  .sheck-box {
+    grid-template-columns: 1fr; 
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr 1fr; 
+  }
+
+  .left-side {
+    grid-column: span 2; 
+  }
+}
